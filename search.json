@@ -18,7 +18,7 @@
     "href": "schedule.html#class-schedule",
     "title": "Schedule & Readings",
     "section": "Class Schedule",
-    "text": "Class Schedule\nn.b. This schedule includes only major exam dates and project due dates. Remember to refer to the assignment prompts for the complete list of weekly checkpoints!\n\n\n\nTopic\nAssignment\nDue Date\n\n\n\n\nData Forms, Organization, and Normalization\n\n\n\n\nExam 1\nFriday 15 Sept.\n\n\n\nProject 1\nFriday 22 Sept.\n\n\n\nWhat is SQL?\n\n\n\n\nQuery building and Database Management Systems\n\n\n\n\nExam 2\nFriday 20 Oct.\n\n\n\nProject 2\nFriday 27 Oct.\n\n\n\nDatabase design and documentation\n\n\n\n\nExam 3\nSaturday 9 Dec. 9am-12pm\n\n\n\nProject 3\nMonday 4 Dec."
+    "text": "Class Schedule\nYou should come to class each day having looked over the links listed for that day. Days marked with two asterisks (*) are required attendance days.*\n\n\n\nDates\nMonday\nWednesday\nFriday\n\n\n\n\n28-30 Aug.\nNO CLASS on Monday\nIntroductions, Data & Information\nThe Relational Model (Just skim this article!)\n\n\n2-6 Sept.\nNO CLASS on Monday\nDependencies\nNormalization**\n\n\n9-13 Sept.\nNormalization Practice, Data Integrity\nSystem Development Lifecycle, Entity Relationship Diagrams**\nERDs cont.\n\n\n16-20 Sept.\nNormalization/ERD Practice\nExam Review Day!\nEXAM 1**\n\n\n23-27 Sept.\nPostgreSQL**\nStructured Query Language\nPROJECT 1 Due, Data Definition Language: INSERT/DELETE\n\n\n30 Sept.-4 Oct.\nDDL: Constraints and Foreign Keys\nData Manipulation Language: Queries**\nDDL: ALTER, UPDATE, RETURNING\n\n\n7-11 Oct.\nSQL Practice, Data Backups\nAggregate Functions, GROUP BY**\nSQL Practice, Prepare for Project 2\n\n\n14-18 Oct.\nJOIN Part 1**\nJOIN Part 2\nJOIN Practice\n\n\n23-25 Oct.\nNO CLASS (Fall Break)\nExam Review Day!\nEXAM 2**\n\n\n28 Oct.-1 Nov.\nACID, Transactions\nUser Interfaces, pgAdmin, User Personas\nProject 2 Due, Use Case Diagrams, Designing a Database\n\n\n4-8 Nov.\nSQL Functions, Creating and using PL/pgSQL**\nDeclaring and Initializing Variables**\nLearn new SQL commands on your own!\n\n\n11-15 Nov.\nTrigger Functions**\nFunctions Practice\nOne-on-one meetings\n\n\n18-22 Nov.\nUser Needs Activities\nDatabase Testing**\nPractice and Work on Final Project\n\n\n25 Nov.\nWork on Final Projects\nNO CLASS on Wednesday\nNO CLASS on Friday\n\n\n2-6 Dec.\nPeer review and Test Final Projects\nFinal Project Work\nOne-on-one meetings\n\n\n9 Dec.\nFinal Project Due! Final Exam Review Day!**\n\n\n\n\n16 Dec.\nFINAL EXAM: 9am-Noon."
   },
   {
     "objectID": "index.html",
@@ -60,7 +60,7 @@
     "href": "assignments.html#assignment-breakdown",
     "title": "Assignments",
     "section": "Assignment Breakdown",
-    "text": "Assignment Breakdown\n\n\n\nAssignment\nPercentage\n\n\n\n\nProject 1\n15%\n\n\nProject 2\n15%\n\n\nFinal Project\n20%\n\n\nExams 1 & 2\n15%\n\n\nFinal Exam\n20%\n\n\nQuizzes\n15%"
+    "text": "Assignment Breakdown\n\n\n\nAssignment\nPercentage\n\n\n\n\nQuizzes\n15%\n\n\nExams 1 & 2\n15%\n\n\nProject 1\n15%\n\n\nProject 2\n15%\n\n\nFinal Project\n20%\n\n\nFinal Exam\n20%"
   },
   {
     "objectID": "assignments/project3.html",

@@ -14,7 +14,7 @@ website:
 format:
   html:
     theme: 
-      light: sketchy
+      light: quartz
       dark: darkly
     css: styles.css
     toc: true

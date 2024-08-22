@@ -8,17 +8,26 @@ There are no required texts for this course. Consider this resource (from the B.
 
 ## Class Schedule
 
-*n.b. This schedule includes only major exam dates and project due dates. Remember to refer to the assignment prompts for the complete list of weekly checkpoints!*
+*You should come to class each day having looked over the links listed for that day. Days marked with two asterisks (\**) are required attendance days.*
 
-Topic|Assignment|Due Date
---|----|--
-**Data Forms, Organization, and Normalization**|
-|Exam 1|Friday 15 Sept.
-|Project 1|Friday 22 Sept.
-**What is SQL?**|
-**Query building and Database Management Systems**|
-|Exam 2|Friday 20 Oct.
-|Project 2|Friday 27 Oct.
-**Database design and documentation**|
-|Exam 3|**Saturday 9 Dec. 9am-12pm**
-|Project 3|**Monday 4 Dec.**
+Dates|Monday|Wednesday|Friday
+-|---|---|---
+28-30 Aug.|NO CLASS on Monday|Introductions, Data & Information|[The Relational Model](https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf) (Just skim this article!)
+2-6 Sept.|NO CLASS on Monday|[Dependencies](https://monday.com/blog/project-management/functional-dependencies-2/)|**[Normalization](https://www.datanamic.com/support/database-normalization.html)**\**
+9-13 Sept.|Normalization Practice, [Data Integrity](https://www.digitalguardian.com/blog/what-data-integrity-data-protection-101)|**System Development Lifecycle, [Entity Relationship Diagrams](https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/)**\**|ERDs cont. 
+16-20 Sept.|Normalization/ERD Practice|Exam Review Day!|**EXAM 1**\**
+23-27 Sept.|**[PostgreSQL](https://www.postgresql.org/docs/14/index.html)**\**|Structured Query Language|**PROJECT 1 Due**, Data Definition Language: [INSERT](https://www.postgresql.org/docs/14/dml-insert.html)/[DELETE](https://www.postgresql.org/docs/14/dml-insert.html)
+30 Sept.-4 Oct.|DDL: [Constraints](https://www.postgresql.org/docs/14/ddl-constraints.html) and Foreign Keys|**Data Manipulation Language: [Queries](https://www.postgresql.org/docs/14/queries-overview.html)**\**|DDL: [ALTER](https://www.postgresql.org/docs/14/ddl-alter.html), [UPDATE](https://www.postgresql.org/docs/14/dml-update.html), [RETURNING](https://www.postgresql.org/docs/14/dml-update.html)
+7-11 Oct.|SQL Practice, [Data Backups](https://www.egnyte.com/guides/governance/data-backup-strategy)|**[Aggregate Functions](https://www.postgresql.org/docs/14/functions-aggregate.html), [GROUP BY](https://www.postgresql.org/docs/14/queries-table-expressions.html#QUERIES-GROUP)**\**|SQL Practice, Prepare for Project 2
+14-18 Oct.|**[JOIN](https://www.postgresql.org/docs/14/tutorial-join.html) Part 1**\**|[JOIN](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-joins/) Part 2|JOIN Practice
+23-25 Oct.|NO CLASS (Fall Break)|Exam Review Day!|**EXAM 2**\**
+28 Oct.-1 Nov.|[ACID](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-joins/), [Transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html)|[User Interfaces](https://e115.engr.ncsu.edu/operating-systems/user-interface/), [pgAdmin](https://www.adservio.fr/post/what-is-pgadmin), [User Personas](https://mailchimp.com/resources/how-to-create-a-user-persona-ux/)|**Project 2 Due**, [Use Case Diagrams](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/), Designing a Database
+4-8 Nov.|**[SQL Functions](https://www.postgresql.org/docs/14/xfunc.html), [Creating](https://www.postgresql.org/docs/14/sql-createfunction.html) and using [PL/pgSQL](https://www.postgresql.org/docs/14/plpgsql-structure.html)**\**|**[Declaring](https://www.postgresql.org/docs/14/plpgsql-declarations.html) and [Initializing](https://www.commandprompt.com/education/how-to-declare-a-variable-in-postgresql/) Variables**\**|Learn new SQL commands on your own!
+11-15 Nov.|**[Trigger Functions](https://www.postgresql.org/docs/14/plpgsql-trigger.html)**\**|Functions Practice|One-on-one meetings
+18-22 Nov.|User Needs Activities|**[Database Testing](https://katalon.com/resources-center/blog/database-testing)**\**|Practice and Work on Final Project
+25 Nov.|Work on Final Projects|NO CLASS on Wednesday|NO CLASS on Friday
+2-6 Dec.|Peer review and Test Final Projects|Final Project Work|One-on-one meetings
+9 Dec.|**Final Project Due! Final Exam Review Day!**\**
+16 Dec.|**FINAL EXAM: 9am-Noon.**
+
+: {.striped .hover}

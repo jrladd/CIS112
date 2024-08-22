@@ -12,11 +12,11 @@ On this page you'll find prompts for the different assignments in our course (po
 
 Assignment|Percentage
 ---|--
+Quizzes|15%
+Exams 1 & 2|15%
 Project 1|15%
 Project 2|15%
 Final Project|20%
-Exams 1 & 2|15%
 Final Exam|20%
-Quizzes|15%
 
 : {.striped .hover}

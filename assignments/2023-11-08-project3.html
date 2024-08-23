@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-11-08">
 
-<title>Database Concepts – CIS112 Database Concepts</title>
+<title>Final Project: Build a Database – CIS112</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -80,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">CIS112 Database Concepts</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">CIS112</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,21 +90,21 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule &amp; Readings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assignments.html"> 
+    <a class="nav-link" href="../assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./policies.html"> 
+    <a class="nav-link" href="../policies.html"> 
 <span class="menu-text">Course Policies</span></a>
   </li>  
 </ul>
@@ -118,23 +119,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a></li>
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning Goals</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Database Concepts</h1>
-<p class="subtitle lead">CIS 112. Washington &amp; Jefferson College. Fall 2024.</p>
+<h1 class="title">Final Project: Build a Database</h1>
 </div>
 
 
@@ -142,6 +135,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 8, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -151,29 +150,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Meeting Time: MWF 1:00-2:10pm</strong></p>
-<p>Dr.&nbsp;Ladd’s Student Drop-In Hours: M 11:30am–12:30pm, Tu &amp; Th 1:30–3:30pm in TECH 201 or email for appointment, jladd@washjeff.edu</p>
-<p>PAL Tutoring Hours: 7-10pm Sunday–Thursday in the CIS Lounge (TECH 217)<br>
-<a href="https://mywj.washjeff.edu/knowledgebase/cis-peer-tutoring/department/computing-and-information-studies">Tutor bios and additional info</a></p>
-<section id="course-description" class="level2">
-<h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
-<p>Databases power so much of our daily lives: your school records are kept in a database, the social media posts you create are recorded and tracked in databases, and your bank keeps your balance and transactions in a database. They are an essential tool for organizing and sharing information across large systems.</p>
-<p>This course will provide an overview of the role of databases within a variety of academic, business, and governmental organizations, and an introduction to database design and management. You will create databases related to your major fields or secondary course of study using both small business and enterprise-class database management systems.</p>
-</section>
-<section id="learning-goals" class="level2">
-<h2 class="anchored" data-anchor-id="learning-goals">Learning Goals</h2>
-<p>At the end of this course, you will be able to:</p>
+<p><strong>Complete by: Monday 4 Dec., at class time.</strong><br>
+<em>See the bottom of the file for additional checkpoints, all due at class time.</em></p>
+<p><em>This prompt was written by Dr.&nbsp;Rapp and lightly adapted by me for our class.</em></p>
+<p>In this project, you will plan, design, and develop a database on a topic of your choice as if you were going to release it online for public use. Sample topics could include…</p>
 <ul>
-<li>Describe and identify the functions of a Database Management System in both design and management</li>
-<li>Understand the fundamental concepts ubiquitous to Database Management Systems</li>
-<li>Create databases using common languages and management systems such as SQL and Postgres</li>
-<li>Design and develop complex database systems using common data forms and normalization techniques</li>
+<li>Normalizing one of the datasets provided through Sakai and performing simple analyses</li>
+<li>Developing the backend for an online voting system (for a small group or organization)</li>
+<li>Collecting your favorite recipes, the ingredients for dishes, the best farmers markets you’ve found, etc.</li>
+<li>Tracking the movies, games, music, and/or books in your personal collection / wishlist</li>
+</ul>
+<p>You may <strong>not</strong> build a database from a dataset of sports statistics or about professional athletes. You may <strong>not</strong> collect data about people without working with W&amp;J’s Institutional Review Board. If you would like to collect data for your final project, please meet with me ASAP!</p>
+<p>Your database must feature no less than eight tables<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, store a minimum of 25 attributes and 80 rows across all tables<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, and store ten reasonably distinct queries representing documented use-cases. Those queries must make use of the following operations:</p>
+<ul>
+<li>At least five queries with JOINs; two of these must use an OUTER JOIN</li>
+<li>At least three queries should use an aggregate function; one must use a GROUP BY</li>
+<li>Your queries should generally be ORDERed BY the use-case of the query</li>
+<li>At least five queries should use a WHERE clause with variables that your user can control</li>
+<li>At least two queries should combine three or more tables</li>
+</ul>
+<p>You will also add a minimum of <strong>two</strong> trigger functions to automatically perform certain transactions within your system. You must use a minimum of <strong>three</strong> SQL keywords that were not covered in class.</p>
+<p>You must provide all relevant documentation as a single PDF which you will name “README.pdf”, to make obvious to the users of your system that it is intended for them to read! The README should be a cohesive document with good flow and must feature your database’s purpose and classification, <strong>three</strong> user personas<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>, a use-case diagram illustrating the actions that intended actors can perform, the complete data dictionary and entity relationship diagram documenting your database design, and instructions written for the person developing your interface detailing the function calls for the particular use-cases you’ve designed your system to support<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>You are expected to work on this project out of class until the due date of 10:20am on Monday, December 4. You are welcome to work with your peers, with the PAL tutors, and with me on this project, but if you choose the same database as a friend you may not share queries, trigger functions, or new keywords unless given written permission from me. To ensure timely completion and prevent end-of-semester stress due to procrastination, I will require pieces of the project submission before the final due date. Here is the timeline for the final project:</p>
+<ul>
+<li><p>Wednesday, November 8 - Friday, November 10: Develop a topic!</p></li>
+<li><p>Friday, November 10: Email me your topic and three potential meeting times on November 15, 16, or 17.</p></li>
+<li><p>Friday, November 17: Class will not be held to make time for 1:1 meetings, to which you will bring…</p>
+<p>– A draft of all of your user personas<br>
+– A draft of your first pass at a use case diagram<br>
+– A draft of your ERD if and only if the prior two are fully complete</p></li>
+<li><p>(Check-in) Monday, November 20: You should submit your in-progress UCD and ERD.</p></li>
+<li><p>(Check-in) Wednesday, November 29: You should submit your in-progress SQL file and README.</p></li>
+<li><p>Monday, December 4: Your complete project is due through Sakai by 10:20am.</p></li>
+</ul>
+<p>The following criteria will be followed to evaluate this assignment on a 100-pt scale:</p>
+<ul>
+<li><p>40 pts: README is submitted as a single PDF and contains all of the following:</p>
+<p>– Description of the purpose / classification of the database<br>
+– The three user personas which guided the development of your system<br>
+– Use-case diagram with useful information about the actors / system functionality<br>
+– Data Dictionary with useful information about the meaning of your data<br>
+– Entity-relationship diagram with useful information about referential integrity<br>
+– How-to instructions for the software developer working on your interface</p></li>
+<li><p>50 pts: SQL file(s) containing your developed schema contain all of the following:</p>
+<p>– DDL build and connect a minimum of 8 tables and 25 attributes<br>
+– DML to insert a minimum of 80 rows of data to your database<br>
+– DDL/DML to store at least ten distinct queries meeting the requirements outlined<br>
+– DDL to develop at least two trigger functions which have meaningful purpose to the system<br>
+– At least three new SQL keywords beyond what was covered in class</p></li>
+<li><p>10 pts: Database meets the intended purpose and is consistent with both the UCD and the ERD</p></li>
 </ul>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>If you are using one of the provided datasets, this may not be applicable. In that case, you must include all provided attributes.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>If it is completely impossible to hit the requirements as indicated given the purpose of a database of your creation, you may ask for an exception to this rule. Any project seeking this exception must have been granted accommodation (through an email confirmation) prior to the Thanksgiving break.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>See footnote 2!<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>As an example, this might include connecting a particular use-case to a particular function. For the Project I &amp; II system, one might write the following as an instruction: “Users are able to search for the phone number of a particular contact (e.g., John Marine). The function query_contact_phone takes two text arguments, representing the first and last name for the contact of interest. An example function call in SQL would look like: <code>SELECT ∗ FROM query_contact_phone(’John’,’Marine’);</code>”<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -410,7 +449,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/jrladd\.github\.io\/CIS112\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

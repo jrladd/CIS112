@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-09-25">
 
-<title>Database Concepts – CIS112 Database Concepts</title>
+<title>Project 2: Database Implementation – CIS112</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -80,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">CIS112 Database Concepts</span>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">CIS112</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -89,21 +90,21 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Schedule &amp; Readings</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assignments.html"> 
+    <a class="nav-link" href="../assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./policies.html"> 
+    <a class="nav-link" href="../policies.html"> 
 <span class="menu-text">Course Policies</span></a>
   </li>  
 </ul>
@@ -118,23 +119,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#course-description" id="toc-course-description" class="nav-link active" data-scroll-target="#course-description">Course Description</a></li>
-  <li><a href="#learning-goals" id="toc-learning-goals" class="nav-link" data-scroll-target="#learning-goals">Learning Goals</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Database Concepts</h1>
-<p class="subtitle lead">CIS 112. Washington &amp; Jefferson College. Fall 2024.</p>
+<h1 class="title">Project 2: Database Implementation</h1>
 </div>
 
 
@@ -142,6 +135,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 25, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -151,27 +150,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Meeting Time: MWF 1:00-2:10pm</strong></p>
-<p>Dr.&nbsp;Ladd’s Student Drop-In Hours: M 11:30am–12:30pm, Tu &amp; Th 1:30–3:30pm in TECH 201 or email for appointment, jladd@washjeff.edu</p>
-<p>PAL Tutoring Hours: 7-10pm Sunday–Thursday in the CIS Lounge (TECH 217)<br>
-<a href="https://mywj.washjeff.edu/knowledgebase/cis-peer-tutoring/department/computing-and-information-studies">Tutor bios and additional info</a></p>
-<section id="course-description" class="level2">
-<h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
-<p>Databases power so much of our daily lives: your school records are kept in a database, the social media posts you create are recorded and tracked in databases, and your bank keeps your balance and transactions in a database. They are an essential tool for organizing and sharing information across large systems.</p>
-<p>This course will provide an overview of the role of databases within a variety of academic, business, and governmental organizations, and an introduction to database design and management. You will create databases related to your major fields or secondary course of study using both small business and enterprise-class database management systems.</p>
-</section>
-<section id="learning-goals" class="level2">
-<h2 class="anchored" data-anchor-id="learning-goals">Learning Goals</h2>
-<p>At the end of this course, you will be able to:</p>
+<p><strong>Complete by: Friday 27 Oct., at class time.</strong><br>
+<em>See the bottom of the file for additional checkpoints, all due at class time.</em></p>
+<p><em>This prompt was written by Dr.&nbsp;Rapp and lightly adapted by me for our class.</em></p>
+<p>In Project I, you organized a dataset and produced an ERD for that organization. In this project, you will transform your organization and roadmap into a fully functional database using PostgreSQL and Notepad++ (or a similar text-editor).</p>
+<p>To ensure consistency across your databases, you will first obtain a copy of the ERD Dr.&nbsp;Ladd and Dr.&nbsp;Rapp built from this dataset. The version you obtain will not be the only correct way to organize this dataset, but it will be the roadmap of the data I will provide for large-scale querying during of this project. Your first task, then, will be to compare your Project I ERD to the class-uniform Project II ERD. You will write a brief essay (300 - 750 words) comparing your ERD to mine, and either arguing to defend your organization or making observations of where you could have improved your organization.</p>
+<p>You will then build a complete schema, with full referential integrity, based on the class-uniform Project II ERD. Your code should follow the best practices of the class and follow the ERD exactly. You will be provided with a larger dataset to store in your functional database, and you will then be tasked with building 20 queries. Dr.&nbsp;Ladd will post the output of such queries; you will be expected to produce the exact output from your databases. You are expected to work on this project out of class until the due date of <strong>Friday, Oct.&nbsp;27</strong>. Recall from the syllabus that you are not permitted to collaborate with your classmates for this project; you may seek guidance from me or the PAL tutors. For the purposes of this project, consider me to be your client and the PAL tutors to be your development team. You are developing this database for me, and to ensure timely completion I will require pieces of the project are required for submission before the final due date.</p>
+<p><strong>Check-in dates:</strong></p>
 <ul>
-<li>Describe and identify the functions of a Database Management System in both design and management</li>
-<li>Understand the fundamental concepts ubiquitous to Database Management Systems</li>
-<li>Create databases using common languages and management systems such as SQL and Postgres</li>
-<li>Design and develop complex database systems using common data forms and normalization techniques</li>
+<li>Friday, October 6: Essay check-in, submitted <em>complete draft</em> as a PDF through Sakai; Required queries / output posted.</li>
+<li>Friday, October 13: DDL check-in, submitted as a .sql file through Sakai.</li>
+<li>Friday, October 20: DML check-in, submitted as a .sql file through Sakai.</li>
+<li>Friday, October 27: Final submission: all project files are submitted through Sakai for grading</li>
+</ul>
+<p><strong>The following criteria will be followed to evaluate this assignment on a 100-pt scale:</strong></p>
+<ul>
+<li>25 pts: Data Definition follows the ERD to produce a database with referential integrity.</li>
+<li>50 pts: Data Manipulation effectively inserts/updates the data and builds the requested queries.</li>
+<li>25 pts: Essay detailing the differences between your Project I work and the class provided ERD.</li>
 </ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -410,7 +409,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/jrladd\.github\.io\/CIS112\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

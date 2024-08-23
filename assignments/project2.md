@@ -2,6 +2,7 @@
 title:  "Project 2: Database Implementation"
 date:   2023-09-25 10:00:00 -0400
 show_date: false
+draft: true
 ---
 **Complete by: Friday 27 Oct., at class time.**  
 *See the bottom of the file for additional checkpoints, all due at class time.*

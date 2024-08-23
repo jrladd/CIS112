@@ -2,6 +2,7 @@
 title:  "Final Project: Build a Database"
 date:   2023-11-08 10:00:00 -0400
 show_date: false
+draft: true
 ---
 **Complete by: Monday 4 Dec., at class time.**  
 *See the bottom of the file for additional checkpoints, all due at class time.*

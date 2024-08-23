@@ -1,6 +1,7 @@
 ---
 title:  "Project 1: Database Design"
 date:   2023-08-31 10:00:00 -0400
+draft: true
 ---
 **Complete by: Friday 22 Sept., at class time.**  
 *See the bottom of the file for additional checkpoints, all due at class time.*

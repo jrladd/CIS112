@@ -8,7 +8,7 @@ There are no required texts for this course. Consider this resource (from the B.
 
 ## Class Schedule
 
-*You should come to class each day having looked over the links listed for that day. Days marked with two asterisks (\**) are required attendance days.*
+*You should come to class each day having looked over the links listed for that day. Days marked with two asterisks (\*\*) are required attendance days (see [Course Policies](policies.qmd#attendance-participation) for more info).*
 
 Dates|Monday|Wednesday|Friday
 -|---|---|---

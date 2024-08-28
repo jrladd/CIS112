@@ -1,1 +1,27 @@
 /* css styles */
+
+#hero-banner {
+    position: relative;
+    color: white;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+#hero-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 50%); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+#hero-banner .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: black; /* Text color */
+    margin: auto;
+    border-radius: 10px; /* Optional: adds rounded corners */
+}

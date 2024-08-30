@@ -9,6 +9,9 @@ format:
     slide-level: 2
     transition: slide
     navigation-mode: vertical
+    incremental: true
+    center: true
+    embed-resources: true
 ---
 
 # Data and Information

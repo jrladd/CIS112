@@ -221,7 +221,7 @@
     "href": "slides/databasics.html#list-all-of-the-functional-dependencies.",
     "title": "Database Basics: Databasics",
     "section": "List all of the functional dependencies.",
-    "text": "List all of the functional dependencies.\n\n\n\nMonth\nDay\nYear\nItem\nPrice\nQuantity\n\n\n\n\n8\n11\n2023\nApple\n$3.99\n2\n\n\n8\n14\n2023\nCokeZero\n$4.99\n3\n\n\n8\n14\n2023\nApple\n$3.99\n5\n\n\n\nWhich column or set of columns might form the primary key of this table?"
+    "text": "List all of the functional dependencies.\n\n\n\nDate\nItem\nPrice\nQuantity\n\n\n\n\n8-11-2023\nApple\n$3.99\n2\n\n\n8-14-2023\nCokeZero\n$4.99\n3\n\n\n8-14-2023\nApple\n$3.99\n5\n\n\n\nWhich column or set of columns might form the primary key of this table?"
   },
   {
     "objectID": "slides/databasics.html#normalization-organizes-data-based-on-functional-dependencies-in-order-to-remove-potential-redundancies.",
@@ -259,11 +259,11 @@
     "text": "Follow these steps:\n\nRewrite the table so it’s in 1NF (i.e. so it follows Codd’s relational model).\nDraw the dependency diagram and identify the primary key(s).\nIf necessary, redraw the dependency diagram so it’s in 2NF. Create the accompanying schema.\nIf necessary, redraw the dependency diagram so it’s in 3NF. Create the accompanying schema."
   },
   {
-    "objectID": "slides/databasics.html#well-try-this-one-together.",
-    "href": "slides/databasics.html#well-try-this-one-together.",
+    "objectID": "slides/databasics.html#some-more-practice-examples.",
+    "href": "slides/databasics.html#some-more-practice-examples.",
     "title": "Database Basics: Databasics",
-    "section": "We’ll try this one together.",
-    "text": "We’ll try this one together."
+    "section": "Some more practice examples.",
+    "text": "Some more practice examples."
   },
   {
     "objectID": "slides/databasics.html#data-integrity-refers-to-the-accuracy-and-consistency-validity-of-data-over-its-life-cycle.",

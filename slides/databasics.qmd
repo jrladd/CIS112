@@ -133,11 +133,11 @@ TABLE(**PrimaryKey**, *ForeignKey*, Attribute)
 
 ## List all of the functional dependencies.
 
-Month|Day|Year|Item|Price|Quantity
---|--|--|---|--|--
-8|11|2023|Apple|$3.99|2
-8|14|2023|CokeZero|$4.99|3
-8|14|2023|Apple|$3.99|5
+Date|Item|Price|Quantity
+--|---|--|--
+8-11-2023|Apple|$3.99|2
+8-14-2023|CokeZero|$4.99|3
+8-14-2023|Apple|$3.99|5
 
 Which column or set of columns might form the primary key of this table?
 
@@ -167,11 +167,7 @@ Some data (like dates) are better kept together for ease of use and performance 
 3. If necessary, redraw the *dependency diagram* so it's in **2NF**. Create the accompanying *schema*.
 4. If necessary, redraw the *dependency diagram* so it's in **3NF**. Create the accompanying *schema*.
 
-## We'll try this one together.
-
-![](img/normalize1.png)
-
----
+## Some more practice examples.
 
 ![](img/normalize2.png)
 

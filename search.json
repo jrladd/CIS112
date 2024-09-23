@@ -431,7 +431,7 @@
     "href": "login.html#if-this-isnt-working",
     "title": "Login to Postgres",
     "section": "If this isn’t working…",
-    "text": "If this isn’t working…\nBefore you login, make sure the PATH is set correctly in your Environmental Variables. If you’re having trouble getting psql to work, this is a likely cause. You’ll need to add the following to your PATH:\nC:\\Program Files\\pgAdmin 4\\v7\\runtime\\"
+    "text": "If this isn’t working…\nBefore you login, make sure the PATH is set correctly in your Environmental Variables. If you’re having trouble getting psql to work, this is a likely cause. You’ll need to add the following to your PATH:\nC:\\Program Files\\pgAdmin 4\\runtime\\"
   },
   {
     "objectID": "policies.html",

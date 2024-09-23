@@ -28,4 +28,4 @@ Postgres is installed in our classroom and all of the lab computers. If you want
 ## If this isn't working...
 
 *Before you login, make sure the PATH is set correctly in your Environmental Variables. If you're having trouble getting psql to work, this is a likely cause. You'll need to add the following to your PATH:  
-`C:\Program Files\pgAdmin 4\v7\runtime\`*
+`C:\Program Files\pgAdmin 4\runtime\`*

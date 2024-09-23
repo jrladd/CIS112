@@ -4,14 +4,14 @@
     "href": "schedule.html",
     "title": "Schedule & Readings",
     "section": "",
-    "text": "There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: Database Design – 2nd Edition, by Adrienne Watt and Nelson Eng.\nSlideshows: Databasics"
+    "text": "There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: Database Design – 2nd Edition, by Adrienne Watt and Nelson Eng.\nSlideshows: Databasics, SQL\nResources: Login to Postgres"
   },
   {
     "objectID": "schedule.html#books-and-materials",
     "href": "schedule.html#books-and-materials",
     "title": "Schedule & Readings",
     "section": "",
-    "text": "There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: Database Design – 2nd Edition, by Adrienne Watt and Nelson Eng.\nSlideshows: Databasics"
+    "text": "There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: Database Design – 2nd Edition, by Adrienne Watt and Nelson Eng.\nSlideshows: Databasics, SQL\nResources: Login to Postgres"
   },
   {
     "objectID": "schedule.html#class-schedule",
@@ -19,6 +19,419 @@
     "title": "Schedule & Readings",
     "section": "Class Schedule",
     "text": "Class Schedule\nYou should come to class each day having looked over the links listed for that day. Days marked with two asterisks (**) are required attendance days (see Course Policies for more info).\n\n\n\nDates\nMonday\nWednesday\nFriday\n\n\n\n\n28-30 Aug.\nNO CLASS on Monday\nIntroductions, Data & Information\nThe Relational Model (Just skim this article!)\n\n\n2-6 Sept.\nNO CLASS on Monday\nDependencies\nNormalization**\n\n\n9-13 Sept.\nNormalization Practice, Data Integrity\nSystem Development Lifecycle, Entity Relationship Diagrams**\nERDs cont.\n\n\n16-20 Sept.\nNormalization/ERD Practice\nExam Review Day!\nEXAM 1**\n\n\n23-27 Sept.\nPostgreSQL**\nStructured Query Language\nPROJECT 1 Due, Data Definition Language: INSERT/DELETE\n\n\n30 Sept.-4 Oct.\nDDL: Constraints and Foreign Keys\nData Manipulation Language: Queries**\nDDL: ALTER, UPDATE, RETURNING\n\n\n7-11 Oct.\nSQL Practice, Data Backups\nAggregate Functions, GROUP BY**\nSQL Practice, Prepare for Project 2\n\n\n14-18 Oct.\nJOIN Part 1**\nJOIN Part 2\nJOIN Practice\n\n\n23-25 Oct.\nNO CLASS (Fall Break)\nExam Review Day!\nEXAM 2**\n\n\n28 Oct.-1 Nov.\nACID, Transactions\nUser Interfaces, pgAdmin, User Personas\nProject 2 Due, Use Case Diagrams, Designing a Database\n\n\n4-8 Nov.\nSQL Functions, Creating and using PL/pgSQL**\nDeclaring and Initializing Variables**\nLearn new SQL commands on your own!\n\n\n11-15 Nov.\nTrigger Functions**\nFunctions Practice\nOne-on-one meetings\n\n\n18-22 Nov.\nUser Needs Activities\nDatabase Testing**\nPractice and Work on Final Project\n\n\n25 Nov.\nWork on Final Projects\nNO CLASS on Wednesday\nNO CLASS on Friday\n\n\n2-6 Dec.\nPeer review and Test Final Projects\nFinal Project Work\nOne-on-one meetings\n\n\n9 Dec.\nFinal Project Due! Final Exam Review Day!**\n\n\n\n\n16 Dec.\nFINAL EXAM: 9am-Noon."
+  },
+  {
+    "objectID": "slides/sql.html#sql-works-in-postgres",
+    "href": "slides/sql.html#sql-works-in-postgres",
+    "title": "SQL",
+    "section": "SQL works in Postgres",
+    "text": "SQL works in Postgres\nbut it’s not the same as Postgres.\nPostgres is the program, SQL is the language."
+  },
+  {
+    "objectID": "slides/sql.html#postgres",
+    "href": "slides/sql.html#postgres",
+    "title": "SQL",
+    "section": "Postgres …",
+    "text": "Postgres …\n\nis open-source, i.e. it’s free for all to use, redistribute, and modify\nsupports SQL (short for PostgreSQL)\nmaintains referential integrity according to Codd’s relational model\nallows developers to implement their own “atomic” data types"
+  },
+  {
+    "objectID": "slides/sql.html#data-types-are-part-of-a-single-object",
+    "href": "slides/sql.html#data-types-are-part-of-a-single-object",
+    "title": "SQL",
+    "section": "Data types are part of a single “object”",
+    "text": "Data types are part of a single “object”\nUsing a relational approach, data “objects” can inherit values from other objects."
+  },
+  {
+    "objectID": "slides/sql.html#consider-the-groceries-example",
+    "href": "slides/sql.html#consider-the-groceries-example",
+    "title": "SQL",
+    "section": "Consider the groceries example…",
+    "text": "Consider the groceries example…\n\n\n\ndate\nitem\nprice\nquantity\n\n\n\n\n8-11-2023\nApple\n$3.99\n2\n\n\n8-14-2023\nCokeZero\n$4.99\n3\n\n\n8-14-2023\nApple\n$3.99\n5"
+  },
+  {
+    "objectID": "slides/sql.html#and-its-erd.",
+    "href": "slides/sql.html#and-its-erd.",
+    "title": "SQL",
+    "section": "… and its ERD.",
+    "text": "… and its ERD."
+  },
+  {
+    "objectID": "slides/sql.html#you-can-create-individual-schemas.",
+    "href": "slides/sql.html#you-can-create-individual-schemas.",
+    "title": "SQL",
+    "section": "You can CREATE individual schemas.",
+    "text": "You can CREATE individual schemas.\nCREATE SCHEMA \"groceries\";\nAlways use quotes for attributes and names!"
+  },
+  {
+    "objectID": "slides/sql.html#you-can-set-that-schema-as-your-search_path.",
+    "href": "slides/sql.html#you-can-set-that-schema-as-your-search_path.",
+    "title": "SQL",
+    "section": "You can SET that schema as your search_path.",
+    "text": "You can SET that schema as your search_path.\nYou should do this at the beginning of every SQL script in NotePad++. (Save files with .sql extension.)\nSET search_path TO \"groceries\";"
+  },
+  {
+    "objectID": "slides/sql.html#you-can-create-an-entire-table-with-one-command.",
+    "href": "slides/sql.html#you-can-create-an-entire-table-with-one-command.",
+    "title": "SQL",
+    "section": "You can CREATE an entire TABLE with one command.",
+    "text": "You can CREATE an entire TABLE with one command.\nCREATE TABLE \"cost\" (\n    \"item\" TEXT PRIMARY KEY,\n    \"price\" FLOAT(3) NOT NULL\n);\nMake sure you include data types, constraints, and primary keys."
+  },
+  {
+    "objectID": "slides/sql.html#the-postgres-documentation-is-a-huge-help",
+    "href": "slides/sql.html#the-postgres-documentation-is-a-huge-help",
+    "title": "SQL",
+    "section": "The Postgres documentation is a huge help!",
+    "text": "The Postgres documentation is a huge help!\n\nThe SQL Language\nTable Basics\nData Types"
+  },
+  {
+    "objectID": "slides/sql.html#sometimes-your-table-will-have-a-composite-primary-key.",
+    "href": "slides/sql.html#sometimes-your-table-will-have-a-composite-primary-key.",
+    "title": "SQL",
+    "section": "Sometimes your table will have a composite PRIMARY KEY.",
+    "text": "Sometimes your table will have a composite PRIMARY KEY.\nCREATE TABLE \"purchase\" (\n    \"date\" DATE NOT NULL,\n    \"item\" TEXT NOT NULL,\n    \"quantity\" INTEGER NOT NULL,\n    PRIMARY KEY (\"date\", \"item\")\n);"
+  },
+  {
+    "objectID": "slides/sql.html#delete-tables-with-drop-and-cascade.",
+    "href": "slides/sql.html#delete-tables-with-drop-and-cascade.",
+    "title": "SQL",
+    "section": "Delete tables with DROP and CASCADE.",
+    "text": "Delete tables with DROP and CASCADE.\nDROP TABLE removes the table and the CASCADE argument removes objects that depend on the table.\nDROP TABLE \"purchase\" CASCADE;"
+  },
+  {
+    "objectID": "slides/sql.html#add-constraints-to-individual-columns-or-the-whole-table.",
+    "href": "slides/sql.html#add-constraints-to-individual-columns-or-the-whole-table.",
+    "title": "SQL",
+    "section": "Add CONSTRAINTs to individual columns or the whole table.",
+    "text": "Add CONSTRAINTs to individual columns or the whole table.\nUse the Postgres Documentation for a complete guide.\n\nYou’ve already done this with PRIMARY KEY and NOT NULL!"
+  },
+  {
+    "objectID": "slides/sql.html#you-can-make-one-or-many-columns-unique.",
+    "href": "slides/sql.html#you-can-make-one-or-many-columns-unique.",
+    "title": "SQL",
+    "section": "You can make one or many columns UNIQUE.",
+    "text": "You can make one or many columns UNIQUE.\nCREATE TABLE \"cost\" (\n    \"item\" TEXT UNIQUE,\n    \"price\" FLOAT(3)\n);\nor\nCREATE TABLE \"cost\" (\n    \"item\" TEXT,\n    \"price\" FLOAT(3),\n    UNIQUE (\"item\")\n);"
+  },
+  {
+    "objectID": "slides/sql.html#add-foreign-keys-with-the-references-constraint.",
+    "href": "slides/sql.html#add-foreign-keys-with-the-references-constraint.",
+    "title": "SQL",
+    "section": "Add foreign keys with the REFERENCES constraint.",
+    "text": "Add foreign keys with the REFERENCES constraint.\n\nAvoid errors with appropriate flow: i.e. you must reference a table that already exists!\nIf you don’t specify the columns, SQL will automatically use the reference table’s primary key."
+  },
+  {
+    "objectID": "slides/sql.html#examples-of-the-references-constraint",
+    "href": "slides/sql.html#examples-of-the-references-constraint",
+    "title": "SQL",
+    "section": "Examples of the REFERENCES constraint",
+    "text": "Examples of the REFERENCES constraint\nCREATE TABLE \"purchase\" ( --Option 1: Column Constraint\n    \"date\" DATE,\n    \"item\" TEXT REFERENCES \"cost\" (\"item\"),\n    \"quantity\" INTEGER NOT NULL,\n    PRIMARY KEY (\"date\", \"item\")\n);\nCREATE TABLE \"purchase\" ( --Option 2: Table Constraint\n    \"date\" DATE,\n    \"item\" TEXT,\n    \"quantity\" INTEGER NOT NULL,\n    PRIMARY KEY (\"date\", \"item\"),\n    FOREIGN KEY (\"item\") REFERENCES \"cost\" (\"item\")\n);"
+  },
+  {
+    "objectID": "slides/sql.html#create-custom-constraints-with-check.",
+    "href": "slides/sql.html#create-custom-constraints-with-check.",
+    "title": "SQL",
+    "section": "Create custom constraints with CHECK.",
+    "text": "Create custom constraints with CHECK.\nCREATE TABLE \"cost\" (\n    \"item\" TEXT PRIMARY KEY,\n    \"price\" FLOAT(3) CHECK (\"price\" &gt; 0)\n);"
+  },
+  {
+    "objectID": "slides/sql.html#you-try-it",
+    "href": "slides/sql.html#you-try-it",
+    "title": "SQL",
+    "section": "You try it!",
+    "text": "You try it!\n\nCompletely delete the groceries schema (but save your .sql files).\nRewrite your DDL script with all original constraints.\nAdd a constraint for the correct foreign key in the “purchase” table.\nAdd a constraint to prevent “price” from being negative.\nRe-run your INSERT commands from last time to repopulate the database.\nLook at the schemas and data (with SELECT) to see if it worked."
+  },
+  {
+    "objectID": "slides/sql.html#change-tables-with-alter.",
+    "href": "slides/sql.html#change-tables-with-alter.",
+    "title": "SQL",
+    "section": "Change tables with ALTER.",
+    "text": "Change tables with ALTER.\nA few examples:\n-- Add a column\nALTER TABLE \"cost\" ADD COLUMN \"weight\" FLOAT(4);\n\n-- Drop a column\nALTER TABLE \"purchase\" DROP COLUMN \"quantity\";\n\n-- Rename a column\nALTER TABLE \"purchase\" RENAME COLUMN \"date\" TO \"day\";\n\n-- Add (or remove) a constraint\nALTER TABLE \"purchase\" ADD FOREIGN KEY (\"item\") REFERENCES \"cost\";\nMore in the Postgres documentation."
+  },
+  {
+    "objectID": "slides/sql.html#insert-data-into-your-tables.",
+    "href": "slides/sql.html#insert-data-into-your-tables.",
+    "title": "SQL",
+    "section": "INSERT data into your tables.",
+    "text": "INSERT data into your tables.\nINSERT INTO \"cost\" VALUES ('Apple', 3.99);"
+  },
+  {
+    "objectID": "slides/sql.html#or-insert-into-specific-columns.",
+    "href": "slides/sql.html#or-insert-into-specific-columns.",
+    "title": "SQL",
+    "section": "Or INSERT into specific columns.",
+    "text": "Or INSERT into specific columns.\nINSERT INTO \"cost\" (item) VALUES ('CokeZero');\nThis will only work if the other columns can be NULL!"
+  },
+  {
+    "objectID": "slides/sql.html#you-try-it-1",
+    "href": "slides/sql.html#you-try-it-1",
+    "title": "SQL",
+    "section": "You try it!",
+    "text": "You try it!\nEnter the command for inserting data into the purchase table.\nHINT: You may need to look at the Postgres documentation for data types."
+  },
+  {
+    "objectID": "slides/sql.html#check-if-your-data-is-there-with-select.",
+    "href": "slides/sql.html#check-if-your-data-is-there-with-select.",
+    "title": "SQL",
+    "section": "Check if your data is there with SELECT.",
+    "text": "Check if your data is there with SELECT.\nSELECT * from \"cost\";\nSELECT * from \"purchase\";\nWe’ll learn a lot more about SELECT later on…"
+  },
+  {
+    "objectID": "slides/sql.html#delete-records-from-your-table.",
+    "href": "slides/sql.html#delete-records-from-your-table.",
+    "title": "SQL",
+    "section": "DELETE records from your table.",
+    "text": "DELETE records from your table.\nDELETE FROM \"purchase\" WHERE \"item\"='Apple';\n\nDelete takes a condition with WHERE (not IF)\nType of quotation marks is important! Tables and column names in double; values in single.\nDELETE FROM \"purchase\"; will delete ALL the data without warning."
+  },
+  {
+    "objectID": "slides/sql.html#you-try-it-2",
+    "href": "slides/sql.html#you-try-it-2",
+    "title": "SQL",
+    "section": "You try it!",
+    "text": "You try it!\nDelete CokeZero from the cost table."
+  },
+  {
+    "objectID": "slides/sql.html#copy-an-entire-table-from-a-csv-file.",
+    "href": "slides/sql.html#copy-an-entire-table-from-a-csv-file.",
+    "title": "SQL",
+    "section": "Copy an entire table from a CSV file.",
+    "text": "Copy an entire table from a CSV file.\n\\copy \"Musical Instrument\" FROM 'musical_instruments.csv' WITH CSV HEADER\n\nThe column names MUST be in the same order.\nThe CSV must be in the same directory as your psql login."
+  },
+  {
+    "objectID": "slides/sql.html#change-records-with-update.",
+    "href": "slides/sql.html#change-records-with-update.",
+    "title": "SQL",
+    "section": "Change records with UPDATE.",
+    "text": "Change records with UPDATE.\n-- Change one or many rows\nUPDATE \"purchase\" SET \"quantity\" = 6 WHERE \"quantity\" = 5;\n\n-- Change all rows based on original value\nUPDATE \"cost\" SET \"price\" = \"price\" * 100;\n\n-- Change more than one column\nUPDATE \"cost\" SET \"item\" = 'Banana', \"price\" = 599 WHERE \"item\" = 'Apple';\nAll this and more in the Postgres documentation."
+  },
+  {
+    "objectID": "slides/sql.html#get-data-while-modifying-rows-with-returning.",
+    "href": "slides/sql.html#get-data-while-modifying-rows-with-returning.",
+    "title": "SQL",
+    "section": "Get data while modifying rows with RETURNING.",
+    "text": "Get data while modifying rows with RETURNING.\nINSERT INTO \"cost\" VALUES ('CokeZero', 4.99) RETURNING \"item\";\n\nUPDATE \"cost\" SET \"price\" = \"price\" * 100 RETURNING \"price\";\nAs always, more in the Postgres documentation."
+  },
+  {
+    "objectID": "slides/sql.html#erds-are-essential-for-queries.",
+    "href": "slides/sql.html#erds-are-essential-for-queries.",
+    "title": "SQL",
+    "section": "ERDs are essential for queries.",
+    "text": "ERDs are essential for queries.\nYou need them for column names, but also for capitalization, combining different tables, etc."
+  },
+  {
+    "objectID": "slides/sql.html#select-is-the-command-for-all-queries.",
+    "href": "slides/sql.html#select-is-the-command-for-all-queries.",
+    "title": "SQL",
+    "section": "SELECT is the command for all queries.",
+    "text": "SELECT is the command for all queries.\nIn its simplest form, you can use it to do simple arithmetic or to get all rows from a table.\nSELECT 5 * 9;\nSELECT * FROM \"purchase\";\nSELECT \"item\", \"quantity\" FROM \"purchase\";"
+  },
+  {
+    "objectID": "slides/sql.html#perform-arithmetic-on-columns-and-give-them-new-names-with-as.",
+    "href": "slides/sql.html#perform-arithmetic-on-columns-and-give-them-new-names-with-as.",
+    "title": "SQL",
+    "section": "Perform arithmetic on columns and give them new names with AS.",
+    "text": "Perform arithmetic on columns and give them new names with AS.\nSELECT \"item\", \"quantity\", \"quantity\" + 5 AS \"updated_quantity\" FROM \"purchase\";"
+  },
+  {
+    "objectID": "slides/sql.html#if-the-column-isnt-numeric-i.e.-money-or-a-date-you-may-have-to-type-cast-to-avoid-errors",
+    "href": "slides/sql.html#if-the-column-isnt-numeric-i.e.-money-or-a-date-you-may-have-to-type-cast-to-avoid-errors",
+    "title": "SQL",
+    "section": "If the column isn’t numeric (i.e. money or a date), you may have to type cast to avoid errors:",
+    "text": "If the column isn’t numeric (i.e. money or a date), you may have to type cast to avoid errors:\nSELECT \"item\", \"quantity\", \"quantity\"::NUMERIC + 5 AS \"updated_quantity\" FROM \"purchase\";\nOther forms of type casting:\n\"quantity\"::NUMERIC::INTEGER\nCAST(\"quantity\" AS NUMERIC)\nCAST(CAST(\"quantity\" AS NUMERIC) AS INTEGER))"
+  },
+  {
+    "objectID": "slides/sql.html#sort-results-with-order-by.",
+    "href": "slides/sql.html#sort-results-with-order-by.",
+    "title": "SQL",
+    "section": "Sort results with ORDER BY.",
+    "text": "Sort results with ORDER BY.\nSELECT \"item\", \"quantity\" FROM \"purchase\" ORDER BY \"item\";\nORDER BY can also be used with arithmetic expressions and newly created columns!"
+  },
+  {
+    "objectID": "slides/sql.html#get-specific-rows-with-where-conditions.",
+    "href": "slides/sql.html#get-specific-rows-with-where-conditions.",
+    "title": "SQL",
+    "section": "Get specific rows with WHERE conditions.",
+    "text": "Get specific rows with WHERE conditions.\nSELECT \"item\", \"date\" FROM \"purchase\" WHERE \"item\" = 'Apple';"
+  },
+  {
+    "objectID": "slides/sql.html#get-a-set-number-of-rows-with-limit.",
+    "href": "slides/sql.html#get-a-set-number-of-rows-with-limit.",
+    "title": "SQL",
+    "section": "Get a set number of rows with LIMIT.",
+    "text": "Get a set number of rows with LIMIT.\nSELECT * FROM \"purchase\" LIMIT 2;\nUse OFFSET to start somewhere other than the beginning (which is row 0):\nSELECT * FROM \"purchase\" LIMIT 2 OFFSET 1;\nIt’s recommended to use LIMIT with ORDER BY always!"
+  },
+  {
+    "objectID": "slides/sql.html#remember-you-can-always-refer-back-to-the-documentation",
+    "href": "slides/sql.html#remember-you-can-always-refer-back-to-the-documentation",
+    "title": "SQL",
+    "section": "Remember, you can always refer back to the documentation:",
+    "text": "Remember, you can always refer back to the documentation:\nSELECT queries: https://www.postgresql.org/docs/14/queries-overview.html\nORDER BY and AS: https://www.postgresql.org/docs/14/queries-order.html\nLIMIT and OFFSET: https://www.postgresql.org/docs/14/queries-limit.html"
+  },
+  {
+    "objectID": "slides/sql.html#you-try-it-3",
+    "href": "slides/sql.html#you-try-it-3",
+    "title": "SQL",
+    "section": "You Try It!",
+    "text": "You Try It!\n\nFinish adding tables and data to the Music schema.\nWrite queries to answer the following questions:\n\n\nWhat pitches were used in files where a clarinet was played?\nWhat would each instrument cost if I got a 10% discount?\nWhich tone colors are visible?\nWhat are the last three note pitches?\n\n\nSave all of these queries in a separate .sql file, which comments that explain what each one does.\nWhen you finish, return to the other practice data sets."
+  },
+  {
+    "objectID": "slides/sql.html#aggregate-functions-let-you-calculate-based-on-columns.",
+    "href": "slides/sql.html#aggregate-functions-let-you-calculate-based-on-columns.",
+    "title": "SQL",
+    "section": "Aggregate functions let you calculate based on columns.",
+    "text": "Aggregate functions let you calculate based on columns.\nSELECT COUNT(\"item\") FROM \"purchase\";\n\nSELECT AVG(\"price\"::NUMERIC) FROM \"cost\";\nRemember to add type casts as needed!"
+  },
+  {
+    "objectID": "slides/sql.html#key-aggregate-functions",
+    "href": "slides/sql.html#key-aggregate-functions",
+    "title": "SQL",
+    "section": "Key aggregate functions:",
+    "text": "Key aggregate functions:\n\nCOUNT()\nAVG()\nSUM()\nMIN()\nMAX()\n\nYou can use the full list from the Postgres documentation!"
+  },
+  {
+    "objectID": "slides/sql.html#use-distinct-to-work-with-unique-values.",
+    "href": "slides/sql.html#use-distinct-to-work-with-unique-values.",
+    "title": "SQL",
+    "section": "Use DISTINCT to work with unique values.",
+    "text": "Use DISTINCT to work with unique values.\nSELECT COUNT(DISTINCT \"item\") FROM \"purchase\";"
+  },
+  {
+    "objectID": "slides/sql.html#group-rows-to-summarize-your-table.",
+    "href": "slides/sql.html#group-rows-to-summarize-your-table.",
+    "title": "SQL",
+    "section": "GROUP rows to summarize your table.",
+    "text": "GROUP rows to summarize your table.\nSELECT \"item\", AVG(\"quantity\") FROM \"purchase\" GROUP BY \"item\";\nUse HAVING to limit groups.\nhttps://www.postgresql.org/docs/14/queries-table-expressions.html#QUERIES-GROUP"
+  },
+  {
+    "objectID": "slides/sql.html#subqueries-define-connections-between-tables.",
+    "href": "slides/sql.html#subqueries-define-connections-between-tables.",
+    "title": "SQL",
+    "section": "Subqueries define connections between tables.",
+    "text": "Subqueries define connections between tables.\nThere are several expressions for subqueries in the documentation.\nUse foreign keys to guide you! This is ideal for optional relations.\n-- This should all be on one line in your .sql file\nSELECT AVG(\"price\"::NUMERIC) FROM \"cost\" WHERE \"item\" \n    IN (SELECT \"item\" FROM \"purchase\" WHERE \"quantity\" &lt; 3);"
+  },
+  {
+    "objectID": "slides/sql.html#you-try-it-4",
+    "href": "slides/sql.html#you-try-it-4",
+    "title": "SQL",
+    "section": "You try it!",
+    "text": "You try it!\nWrite queries to answer the following for the “music” schema:\n\nWhat is the average cost of all instruments?\nWhat is the average cost of each instrument (since some have multiple manufacturers)?\nWhat is the maximum frequency of pitch colors with a WvMin (for color) of less than 500?\nHow many individual instrument families are there?"
+  },
+  {
+    "objectID": "slides/sql.html#a-join-combines-results-from-2-or-more-tables.",
+    "href": "slides/sql.html#a-join-combines-results-from-2-or-more-tables.",
+    "title": "SQL",
+    "section": "A JOIN combines results from 2 or more tables.",
+    "text": "A JOIN combines results from 2 or more tables.\nThe basics of JOIN syntax:\nhttps://www.postgresql.org/docs/14/tutorial-join.html\nDetails on different JOIN statements:\nhttps://www.postgresql.org/docs/14/queries-table-expressions.html#QUERIES-FROM"
+  },
+  {
+    "objectID": "slides/sql.html#inner-joins-only-return-rows-that-exist-in-both-tables.",
+    "href": "slides/sql.html#inner-joins-only-return-rows-that-exist-in-both-tables.",
+    "title": "SQL",
+    "section": "INNER JOINs only return rows that exist in both tables.",
+    "text": "INNER JOINs only return rows that exist in both tables.\nConsider the inner part of a venn diagram. Only the overlapping part is returned.\nLet’s try to make venn diagrams for LEFT, RIGHT, and FULL OUTER JOINs."
+  },
+  {
+    "objectID": "slides/sql.html#inner-join-is-the-default.",
+    "href": "slides/sql.html#inner-join-is-the-default.",
+    "title": "SQL",
+    "section": "INNER JOIN is the default.",
+    "text": "INNER JOIN is the default.\nSELECT * FROM \"cost\" JOIN \"purchase\" ON \"cost\".\"item\" = \"purchase\".\"item\";\nMatch foreign keys with ON or with USING.\n--Using needs parentheses and eliminates duplicates\nSELECT * FROM \"cost\" JOIN \"purchase\" USING (\"item\");"
+  },
+  {
+    "objectID": "slides/sql.html#use-aliases-to-simplify-your-statements.",
+    "href": "slides/sql.html#use-aliases-to-simplify-your-statements.",
+    "title": "SQL",
+    "section": "Use Aliases to simplify your statements.",
+    "text": "Use Aliases to simplify your statements.\nSELECT c.\"item\", c.\"price\", p.\"date\"\n    FROM \"cost\" AS c JOIN \"purchase\" AS p ON c.\"item\" = p.\"item\";\nYou can do this without AS, too.\nSELECT c.\"item\", c.\"price\", p.\"date\"\n    FROM \"cost\" c JOIN \"purchase\" p ON c.\"item\" = p.\"item\";"
+  },
+  {
+    "objectID": "slides/sql.html#you-try-it-5",
+    "href": "slides/sql.html#you-try-it-5",
+    "title": "SQL",
+    "section": "You Try It!",
+    "text": "You Try It!\n\nFind the dynamic, MIDI, and frequency for every pitch.\nGet the average cost for each family of instrument.\nGet WvMin and WvMax values for both pitch and color."
+  },
+  {
+    "objectID": "slides/sql.html#outer-join-resources",
+    "href": "slides/sql.html#outer-join-resources",
+    "title": "SQL",
+    "section": "OUTER JOIN resources",
+    "text": "OUTER JOIN resources\n\nPostgres documentation: https://www.postgresql.org/docs/14/queries-table-expressions.html#QUERIES-FROM\nJOIN tutorial: https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-joins/"
+  },
+  {
+    "objectID": "slides/sql.html#you-try-it-practicing-joins",
+    "href": "slides/sql.html#you-try-it-practicing-joins",
+    "title": "SQL",
+    "section": "You Try It: Practicing JOINS",
+    "text": "You Try It: Practicing JOINS\n\nMake a list of all instruments, their families, and their cost (even if there’s no cost listed).\nGet the average frequency played by each instrument.\nCreate a table showing all colors with their pitch, their visibility, and whether they were played on piano. The table should show pitches that don’t have colors and vice versa.\nShow the files and pitches in which pitches were played with a frequency greater than 210, and show any of those pitches that were not played in files."
+  },
+  {
+    "objectID": "slides/sql.html#practicing-joins-cont.",
+    "href": "slides/sql.html#practicing-joins-cont.",
+    "title": "SQL",
+    "section": "Practicing JOINS (cont.)",
+    "text": "Practicing JOINS (cont.)\n\nGet the names, ages, games, and star ratings for every spy who playtested a game and every spy who didn’t playtest.\nList the platform for every game played by Jason Bourne.\nWhich spies played their games for more than one hour?\nCreate a table of all games, the year they came out, all spies, and their ages, whether or not a spy playtested a game or a game was playtested at all."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Database Concepts",
+    "section": "",
+    "text": "Meeting Time: MWF 1:00-2:10pm\nDr. Ladd’s Student Drop-In Hours: M 11:30am–12:30pm, Tu & Th 1:30–3:30pm in TECH 201 or email for appointment, jladd@washjeff.edu\nPAL Tutoring Hours: 7-10pm Sunday–Thursday in the CIS Lounge (TECH 217)\nTutor bios and additional info"
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Database Concepts",
+    "section": "Course Description",
+    "text": "Course Description\nDatabases power so much of our daily lives: your school records are kept in a database, the social media posts you create are recorded and tracked in databases, and your bank keeps your balance and transactions in a database. They are an essential tool for organizing and sharing information across large systems.\nThis course will provide an overview of the role of databases within a variety of academic, business, and governmental organizations, and an introduction to database design and management. You will create databases related to your major fields or secondary course of study using both small business and enterprise-class database management systems."
+  },
+  {
+    "objectID": "index.html#learning-goals",
+    "href": "index.html#learning-goals",
+    "title": "Database Concepts",
+    "section": "Learning Goals",
+    "text": "Learning Goals\nAt the end of this course, you will be able to:\n\nDescribe and identify the functions of a Database Management System in both design and management\nUnderstand the fundamental concepts ubiquitous to Database Management Systems\nCreate databases using common languages and management systems such as SQL and Postgres\nDesign and develop complex database systems using common data forms and normalization techniques"
+  },
+  {
+    "objectID": "assignments/project1.html",
+    "href": "assignments/project1.html",
+    "title": "Project 1: Database Design",
+    "section": "",
+    "text": "Complete by: Friday 27 Sept., at class time.\nSee the bottom of the file for additional checkpoints, all due at class time.\nThis prompt was written by Dr. Rapp and lightly adapted by me for our class.\nIn this project, you will examine a real-world dataset and design a database to support it following the best-practices taught throughout the course. The dataset can be downloaded from Sakai, either in the “Project 1” folder under Resources, or under the Project 1 Assignment.\nYour first task is to normalize the dataset; you’ll create an Excel file, with one Sheet per table, that indicates all primary keys in bold and color coordinates the foreign key connections between the tables. You’ll then create a single README, or a PDF document to accompany a dataset which contains relevant details that all users are expected to read as a starting point. The README must contain a dependency diagram with all full functional dependencies indicated, a complete physical ERD documenting the normalized schema, a Data Dictionary which associates the column names with their relevant descriptions, and a reflective essay (1-2 pages) detailing your organizational choices and how they serve the way people will use this dataset. Your reflection will use the technical terms we define in class and should discuss the contributions others made to your choices. The README will also contain all citations and references.\nYou are expected to work on this project out of class until the due date of Friday, September 27. Recall from the syllabus that you are permitted to ask your classmates for help with this project provided you cite their contributions to your work; you are also encouraged to seek guidance from me or from the PAL tutors.\nYou may consider me to be your client for this project and the associated Project II. In an industry setting, you’ll be expected to communicate with your client during the development of your product; to help you practice this, along with the specific database design skills you’ll demonstrate, you have a few checkpoints to complete prior to the final due date. These are intended to help you make steady progress on the project, so that by the final deadline all your work will be polished and complete. All checkpoints can be submitted to the same Sakai Assignment.\nThis breakdown identifies all the important dates:\n\nFriday, September 13: You will upload an in-progress Dependency Diagram as a photo through Sakai.\nMonday, September 16: You will upload an in-progress Excel file to Sakai to confirm navigational accessibility.\nMonday, September 23: You will upload an in-progress README as a PDF to Sakai to confirm formatting.\nFriday, September 27: A completed Excel file and README are submitted through Sakai.\n\nThe following categories will be my criteria to evaluate this assignment on a 100-pt scale:\n\n35 pts: All relations are well-formed; data has been normalized following your dependency diagram.\n35 pts: The schema you developed and its contents are well documented using a physical ERD.\n30 pts: Data Dictionary and Reflection support the decisions documented in the Excel file and ERD."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "On this page you’ll find prompts for the different assignments in our course (posted closer to their due dates), as well as a breakdown of assignments. Additional information about assignments and grading can be found on the Course Policies page."
+  },
+  {
+    "objectID": "assignments.html#assignment-breakdown",
+    "href": "assignments.html#assignment-breakdown",
+    "title": "Assignments",
+    "section": "Assignment Breakdown",
+    "text": "Assignment Breakdown\n\n\n\nAssignment\nPercentage\n\n\n\n\nQuizzes\n15%\n\n\nExams 1 & 2\n15%\n\n\nProject 1\n15%\n\n\nProject 2\n15%\n\n\nFinal Project\n20%\n\n\nFinal Exam\n20%"
+  },
+  {
+    "objectID": "login.html",
+    "href": "login.html",
+    "title": "Login to Postgres",
+    "section": "",
+    "text": "Make sure you are on the WashJeff campus Wifi network. Postgres will only work when connected to this network!\nCheck your email for your username and password.\nOpen the Command Prompt (either through Notepad++ or the Start Menu).\nEnter the following command: psql.exe -h wjcissvr.washjeff.edu -U yourusername -d yourdatabase\nWhen prompted, enter your full password (case sensitive) and press Enter. (It won’t look like you’re typing anything, but this is normal!)\nLook for the prompt username=&gt;, and you’re ready to go!\nPostgres is installed in our classroom and all of the lab computers. If you want to use it on your own machine, you’ll need to install Postgres there yourself."
+  },
+  {
+    "objectID": "login.html#common-psql-commands",
+    "href": "login.html#common-psql-commands",
+    "title": "Login to Postgres",
+    "section": "Common psql Commands",
+    "text": "Common psql Commands\n\n\\c Connect to a database\n\\i Execute a script\n\\d List all tables and views of the available schema\nhelp List all psql help commands\n\\h List all SQL commands\n\\? List all psql commands\n\\q Close the database connection and exit the program\n\\dn List all viewable schemas\n\\dt List all of the tables in the active schema\n\\l List all viewable databases"
+  },
+  {
+    "objectID": "login.html#if-this-isnt-working",
+    "href": "login.html#if-this-isnt-working",
+    "title": "Login to Postgres",
+    "section": "If this isn’t working…",
+    "text": "If this isn’t working…\nBefore you login, make sure the PATH is set correctly in your Environmental Variables. If you’re having trouble getting psql to work, this is a likely cause. You’ll need to add the following to your PATH:\nC:\\Program Files\\pgAdmin 4\\v7\\runtime\\"
   },
   {
     "objectID": "policies.html",
@@ -47,48 +460,6 @@
     "title": "Course Policies",
     "section": "Grading Scale",
     "text": "Grading Scale\n\n\n\nLetter Grade\nPoint Total\n\n\n\n\nA\n93-100\n\n\nA-\n90-92\n\n\nB+\n87-89\n\n\nB\n83-86\n\n\nB-\n80-82\n\n\nC+\n77-79\n\n\nC\n73-76\n\n\nC-\n70-72\n\n\nD+\n67-69\n\n\nD\n63-66\n\n\nD-\n60-62\n\n\nF\n&lt;60"
-  },
-  {
-    "objectID": "assignments/project1.html",
-    "href": "assignments/project1.html",
-    "title": "Project 1: Database Design",
-    "section": "",
-    "text": "Complete by: Friday 27 Sept., at class time.\nSee the bottom of the file for additional checkpoints, all due at class time.\nThis prompt was written by Dr. Rapp and lightly adapted by me for our class.\nIn this project, you will examine a real-world dataset and design a database to support it following the best-practices taught throughout the course. The dataset can be downloaded from Sakai, either in the “Project 1” folder under Resources, or under the Project 1 Assignment.\nYour first task is to normalize the dataset; you’ll create an Excel file, with one Sheet per table, that indicates all primary keys in bold and color coordinates the foreign key connections between the tables. You’ll then create a single README, or a PDF document to accompany a dataset which contains relevant details that all users are expected to read as a starting point. The README must contain a dependency diagram with all full functional dependencies indicated, a complete physical ERD documenting the normalized schema, a Data Dictionary which associates the column names with their relevant descriptions, and a reflective essay (1-2 pages) detailing your organizational choices and how they serve the way people will use this dataset. Your reflection will use the technical terms we define in class and should discuss the contributions others made to your choices. The README will also contain all citations and references.\nYou are expected to work on this project out of class until the due date of Friday, September 27. Recall from the syllabus that you are permitted to ask your classmates for help with this project provided you cite their contributions to your work; you are also encouraged to seek guidance from me or from the PAL tutors.\nYou may consider me to be your client for this project and the associated Project II. In an industry setting, you’ll be expected to communicate with your client during the development of your product; to help you practice this, along with the specific database design skills you’ll demonstrate, you have a few checkpoints to complete prior to the final due date. These are intended to help you make steady progress on the project, so that by the final deadline all your work will be polished and complete. All checkpoints can be submitted to the same Sakai Assignment.\nThis breakdown identifies all the important dates:\n\nFriday, September 13: You will upload an in-progress Dependency Diagram as a photo through Sakai.\nMonday, September 16: You will upload an in-progress Excel file to Sakai to confirm navigational accessibility.\nMonday, September 23: You will upload an in-progress README as a PDF to Sakai to confirm formatting.\nFriday, September 27: A completed Excel file and README are submitted through Sakai.\n\nThe following categories will be my criteria to evaluate this assignment on a 100-pt scale:\n\n35 pts: All relations are well-formed; data has been normalized following your dependency diagram.\n35 pts: The schema you developed and its contents are well documented using a physical ERD.\n30 pts: Data Dictionary and Reflection support the decisions documented in the Excel file and ERD."
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "On this page you’ll find prompts for the different assignments in our course (posted closer to their due dates), as well as a breakdown of assignments. Additional information about assignments and grading can be found on the Course Policies page."
-  },
-  {
-    "objectID": "assignments.html#assignment-breakdown",
-    "href": "assignments.html#assignment-breakdown",
-    "title": "Assignments",
-    "section": "Assignment Breakdown",
-    "text": "Assignment Breakdown\n\n\n\nAssignment\nPercentage\n\n\n\n\nQuizzes\n15%\n\n\nExams 1 & 2\n15%\n\n\nProject 1\n15%\n\n\nProject 2\n15%\n\n\nFinal Project\n20%\n\n\nFinal Exam\n20%"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Database Concepts",
-    "section": "",
-    "text": "Meeting Time: MWF 1:00-2:10pm\nDr. Ladd’s Student Drop-In Hours: M 11:30am–12:30pm, Tu & Th 1:30–3:30pm in TECH 201 or email for appointment, jladd@washjeff.edu\nPAL Tutoring Hours: 7-10pm Sunday–Thursday in the CIS Lounge (TECH 217)\nTutor bios and additional info"
-  },
-  {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Database Concepts",
-    "section": "Course Description",
-    "text": "Course Description\nDatabases power so much of our daily lives: your school records are kept in a database, the social media posts you create are recorded and tracked in databases, and your bank keeps your balance and transactions in a database. They are an essential tool for organizing and sharing information across large systems.\nThis course will provide an overview of the role of databases within a variety of academic, business, and governmental organizations, and an introduction to database design and management. You will create databases related to your major fields or secondary course of study using both small business and enterprise-class database management systems."
-  },
-  {
-    "objectID": "index.html#learning-goals",
-    "href": "index.html#learning-goals",
-    "title": "Database Concepts",
-    "section": "Learning Goals",
-    "text": "Learning Goals\nAt the end of this course, you will be able to:\n\nDescribe and identify the functions of a Database Management System in both design and management\nUnderstand the fundamental concepts ubiquitous to Database Management Systems\nCreate databases using common languages and management systems such as SQL and Postgres\nDesign and develop complex database systems using common data forms and normalization techniques"
   },
   {
     "objectID": "slides/databasics.html#what-is-data",

@@ -24,7 +24,7 @@ but it's not the same *as* Postgres.
 
 Postgres is the program, SQL is the language.
 
-## Postgres ...
+## Postgres is an object-relational database management system (DBMS). It...
 
 - is open-source, i.e. it's free for all to use, redistribute, and modify
 - supports SQL (short for PostgreSQL)

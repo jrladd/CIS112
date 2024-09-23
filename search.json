@@ -28,11 +28,11 @@
     "text": "SQL works in Postgres\nbut it’s not the same as Postgres.\nPostgres is the program, SQL is the language."
   },
   {
-    "objectID": "slides/sql.html#postgres",
-    "href": "slides/sql.html#postgres",
+    "objectID": "slides/sql.html#postgres-is-an-object-relational-database-management-system-dbms.-it",
+    "href": "slides/sql.html#postgres-is-an-object-relational-database-management-system-dbms.-it",
     "title": "SQL",
-    "section": "Postgres …",
-    "text": "Postgres …\n\nis open-source, i.e. it’s free for all to use, redistribute, and modify\nsupports SQL (short for PostgreSQL)\nmaintains referential integrity according to Codd’s relational model\nallows developers to implement their own “atomic” data types"
+    "section": "Postgres is an object-relational database management system (DBMS). It…",
+    "text": "Postgres is an object-relational database management system (DBMS). It…\n\nis open-source, i.e. it’s free for all to use, redistribute, and modify\nsupports SQL (short for PostgreSQL)\nmaintains referential integrity according to Codd’s relational model\nallows developers to implement their own “atomic” data types"
   },
   {
     "objectID": "slides/sql.html#data-types-are-part-of-a-single-object",

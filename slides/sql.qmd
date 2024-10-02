@@ -360,7 +360,7 @@ LIMIT and OFFSET: <https://www.postgresql.org/docs/14/queries-limit.html>
 - What would each instrument cost if I got a 10% discount?
 - Which tone colors are visible?
 - What are the last three note pitches?
-3. Save all of these queries in a separate .sql file, which comments that explain what each one does.
+3. Save all of these queries in a separate .sql file, with comments that explain what each one does.
 4. When you finish, return to the other practice data sets.
 
 ## Aggregate functions let you calculate based on columns.

@@ -1,6 +1,6 @@
 ---
 title:  "Project 2: Database Implementation"
-date:   2023-09-25 10:00:00 -0400
+date:   2024-10-03 10:00:00 -0400
 show_date: false
 ---
 **Complete by: Friday 1 Nov., at class time.**  

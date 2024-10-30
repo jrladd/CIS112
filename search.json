@@ -4,14 +4,14 @@
     "href": "schedule.html",
     "title": "Schedule & Readings",
     "section": "",
-    "text": "There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: Database Design – 2nd Edition, by Adrienne Watt and Nelson Eng.\nSlideshows: Databasics, SQL\nResources: Login to Postgres"
+    "text": "There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: Database Design – 2nd Edition, by Adrienne Watt and Nelson Eng.\nSlideshows: Databasics, SQL\nResources: Login to Postgres, Design a Database"
   },
   {
     "objectID": "schedule.html#books-and-materials",
     "href": "schedule.html#books-and-materials",
     "title": "Schedule & Readings",
     "section": "",
-    "text": "There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: Database Design – 2nd Edition, by Adrienne Watt and Nelson Eng.\nSlideshows: Databasics, SQL\nResources: Login to Postgres"
+    "text": "There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: Database Design – 2nd Edition, by Adrienne Watt and Nelson Eng.\nSlideshows: Databasics, SQL\nResources: Login to Postgres, Design a Database"
   },
   {
     "objectID": "schedule.html#class-schedule",
@@ -392,34 +392,6 @@
     "text": "Learning Goals\nAt the end of this course, you will be able to:\n\nDescribe and identify the functions of a Database Management System in both design and management\nUnderstand the fundamental concepts ubiquitous to Database Management Systems\nCreate databases using common languages and management systems such as SQL and Postgres\nDesign and develop complex database systems using common data forms and normalization techniques"
   },
   {
-    "objectID": "assignments/project1.html",
-    "href": "assignments/project1.html",
-    "title": "Project 1: Database Design",
-    "section": "",
-    "text": "Complete by: Friday 27 Sept., at class time.\nSee the bottom of the file for additional checkpoints, all due at class time.\nThis prompt was written by Dr. Rapp and lightly adapted by me for our class.\nIn this project, you will examine a real-world dataset and design a database to support it following the best-practices taught throughout the course. The dataset can be downloaded from Sakai, either in the “Project 1” folder under Resources, or under the Project 1 Assignment.\nYour first task is to normalize the dataset; you’ll create an Excel file, with one Sheet per table, that indicates all primary keys in bold and color coordinates the foreign key connections between the tables. You’ll then create a single README, or a PDF document to accompany a dataset which contains relevant details that all users are expected to read as a starting point. The README must contain a dependency diagram with all full functional dependencies indicated, a complete physical ERD documenting the normalized schema, a Data Dictionary which associates the column names with their relevant descriptions, and a reflective essay (1-2 pages) detailing your organizational choices and how they serve the way people will use this dataset. Your reflection will use the technical terms we define in class and should discuss the contributions others made to your choices. The README will also contain all citations and references.\nYou are expected to work on this project out of class until the due date of Friday, September 27. Recall from the syllabus that you are permitted to ask your classmates for help with this project provided you cite their contributions to your work; you are also encouraged to seek guidance from me or from the PAL tutors.\nYou may consider me to be your client for this project and the associated Project II. In an industry setting, you’ll be expected to communicate with your client during the development of your product; to help you practice this, along with the specific database design skills you’ll demonstrate, you have a few checkpoints to complete prior to the final due date. These are intended to help you make steady progress on the project, so that by the final deadline all your work will be polished and complete. All checkpoints can be submitted to the same Sakai Assignment.\nThis breakdown identifies all the important dates:\n\nFriday, September 13: You will upload an in-progress Dependency Diagram as a photo through Sakai.\nMonday, September 16: You will upload an in-progress Excel file to Sakai to confirm navigational accessibility.\nMonday, September 23: You will upload an in-progress README as a PDF to Sakai to confirm formatting.\nFriday, September 27: A completed Excel file and README are submitted through Sakai.\n\nThe following categories will be my criteria to evaluate this assignment on a 100-pt scale:\n\n35 pts: All relations are well-formed; data has been normalized following your dependency diagram.\n35 pts: The schema you developed and its contents are well documented using a physical ERD.\n30 pts: Data Dictionary and Reflection support the decisions documented in the Excel file and ERD."
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "On this page you’ll find prompts for the different assignments in our course (posted closer to their due dates), as well as a breakdown of assignments. Additional information about assignments and grading can be found on the Course Policies page."
-  },
-  {
-    "objectID": "assignments.html#assignment-breakdown",
-    "href": "assignments.html#assignment-breakdown",
-    "title": "Assignments",
-    "section": "Assignment Breakdown",
-    "text": "Assignment Breakdown\n\n\n\nAssignment\nPercentage\n\n\n\n\nQuizzes\n15%\n\n\nExams 1 & 2\n15%\n\n\nProject 1\n15%\n\n\nProject 2\n15%\n\n\nFinal Project\n20%\n\n\nFinal Exam\n20%"
-  },
-  {
-    "objectID": "assignments/project2.html",
-    "href": "assignments/project2.html",
-    "title": "Project 2: Database Implementation",
-    "section": "",
-    "text": "Complete by: Friday 1 Nov., at class time.\nSee the bottom of the file for additional checkpoints, all due at class time.\nThis prompt was written by Dr. Rapp and lightly adapted by me for our class.\nIn Project I, you organized a dataset and produced an ERD for that organization. In this project, you will transform your organization and roadmap into a fully functional database using PostgreSQL and Notepad++ (or a similar text-editor).\nTo ensure consistency across your databases, you will first obtain a copy of the ERD Dr. Ladd built from this dataset. The version you obtain will not be the only correct way to organize this dataset, but it will be the roadmap of the data I will provide for large-scale querying during of this project. Your first task, then, will be to compare your Project I ERD to the class-uniform Project II ERD. You will write a brief essay (300 - 750 words) comparing your ERD to mine, and either arguing to defend your organization or making observations of where you could have improved your organization.\nYou will then build a complete schema, with full referential integrity, based on the class-uniform Project II ERD. Your code should follow the best practices of the class and follow the ERD exactly. You will be provided with a larger dataset to store in your functional database, and you will then be tasked with building 20 queries. Dr. Ladd will post the output of such queries; you will be expected to produce the exact output from your databases. You are expected to work on this project out of class until the due date of Friday, Nov. 1. Recall from the syllabus that you are not permitted to collaborate with your classmates for this project; you may seek guidance from me or the PAL tutors. For the purposes of this project, consider me to be your client and the PAL tutors to be your development team. You are developing this database for me, and to ensure timely completion I will require pieces of the project for submission before the final due date.\nCheck-in dates:\n\nFriday, October 11: Essay check-in, submitted complete draft as a PDF through Sakai; Required queries / output posted.\nFriday, October 18: DDL check-in, submitted as a .sql file through Sakai.\nFriday, October 25: DML check-in, submitted as a .sql file through Sakai.\nFriday, November 1: Final submission: all project files are submitted through Sakai for grading\n\nThe following criteria will be followed to evaluate this assignment on a 100-pt scale:\n\n25 pts: Data Definition follows the ERD to produce a database with referential integrity.\n50 pts: Data Manipulation effectively inserts/updates the data and builds the requested queries.\n25 pts: Essay detailing the differences between your Project I work and the class provided ERD."
-  },
-  {
     "objectID": "login.html",
     "href": "login.html",
     "title": "Login to Postgres",
@@ -439,6 +411,41 @@
     "title": "Login to Postgres",
     "section": "If this isn’t working…",
     "text": "If this isn’t working…\nBefore you login, make sure the PATH is set correctly in your Environmental Variables. If you’re having trouble getting psql to work, this is a likely cause. You’ll need to add the following to your PATH:\nC:\\Program Files\\pgAdmin 4\\runtime\\"
+  },
+  {
+    "objectID": "assignments/project2.html",
+    "href": "assignments/project2.html",
+    "title": "Project 2: Database Implementation",
+    "section": "",
+    "text": "Complete by: Friday 1 Nov., at class time.\nSee the bottom of the file for additional checkpoints, all due at class time.\nThis prompt was written by Dr. Rapp and lightly adapted by me for our class.\nIn Project I, you organized a dataset and produced an ERD for that organization. In this project, you will transform your organization and roadmap into a fully functional database using PostgreSQL and Notepad++ (or a similar text-editor).\nTo ensure consistency across your databases, you will first obtain a copy of the ERD Dr. Ladd built from this dataset. The version you obtain will not be the only correct way to organize this dataset, but it will be the roadmap of the data I will provide for large-scale querying during of this project. Your first task, then, will be to compare your Project I ERD to the class-uniform Project II ERD. You will write a brief essay (300 - 750 words) comparing your ERD to mine, and either arguing to defend your organization or making observations of where you could have improved your organization.\nYou will then build a complete schema, with full referential integrity, based on the class-uniform Project II ERD. Your code should follow the best practices of the class and follow the ERD exactly. You will be provided with a larger dataset to store in your functional database, and you will then be tasked with building 20 queries. Dr. Ladd will post the output of such queries; you will be expected to produce the exact output from your databases. You are expected to work on this project out of class until the due date of Friday, Nov. 1. Recall from the syllabus that you are not permitted to collaborate with your classmates for this project; you may seek guidance from me or the PAL tutors. For the purposes of this project, consider me to be your client and the PAL tutors to be your development team. You are developing this database for me, and to ensure timely completion I will require pieces of the project for submission before the final due date.\nCheck-in dates:\n\nFriday, October 11: Essay check-in, submitted complete draft as a PDF through Sakai; Required queries / output posted.\nFriday, October 18: DDL check-in, submitted as a .sql file through Sakai.\nFriday, October 25: DML check-in, submitted as a .sql file through Sakai.\nFriday, November 1: Final submission: all project files are submitted through Sakai for grading\n\nThe following criteria will be followed to evaluate this assignment on a 100-pt scale:\n\n25 pts: Data Definition follows the ERD to produce a database with referential integrity.\n50 pts: Data Manipulation effectively inserts/updates the data and builds the requested queries.\n25 pts: Essay detailing the differences between your Project I work and the class provided ERD."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "On this page you’ll find prompts for the different assignments in our course (posted closer to their due dates), as well as a breakdown of assignments. Additional information about assignments and grading can be found on the Course Policies page."
+  },
+  {
+    "objectID": "assignments.html#assignment-breakdown",
+    "href": "assignments.html#assignment-breakdown",
+    "title": "Assignments",
+    "section": "Assignment Breakdown",
+    "text": "Assignment Breakdown\n\n\n\nAssignment\nPercentage\n\n\n\n\nQuizzes\n15%\n\n\nExams 1 & 2\n15%\n\n\nProject 1\n15%\n\n\nProject 2\n15%\n\n\nFinal Project\n20%\n\n\nFinal Exam\n20%"
+  },
+  {
+    "objectID": "assignments/project1.html",
+    "href": "assignments/project1.html",
+    "title": "Project 1: Database Design",
+    "section": "",
+    "text": "Complete by: Friday 27 Sept., at class time.\nSee the bottom of the file for additional checkpoints, all due at class time.\nThis prompt was written by Dr. Rapp and lightly adapted by me for our class.\nIn this project, you will examine a real-world dataset and design a database to support it following the best-practices taught throughout the course. The dataset can be downloaded from Sakai, either in the “Project 1” folder under Resources, or under the Project 1 Assignment.\nYour first task is to normalize the dataset; you’ll create an Excel file, with one Sheet per table, that indicates all primary keys in bold and color coordinates the foreign key connections between the tables. You’ll then create a single README, or a PDF document to accompany a dataset which contains relevant details that all users are expected to read as a starting point. The README must contain a dependency diagram with all full functional dependencies indicated, a complete physical ERD documenting the normalized schema, a Data Dictionary which associates the column names with their relevant descriptions, and a reflective essay (1-2 pages) detailing your organizational choices and how they serve the way people will use this dataset. Your reflection will use the technical terms we define in class and should discuss the contributions others made to your choices. The README will also contain all citations and references.\nYou are expected to work on this project out of class until the due date of Friday, September 27. Recall from the syllabus that you are permitted to ask your classmates for help with this project provided you cite their contributions to your work; you are also encouraged to seek guidance from me or from the PAL tutors.\nYou may consider me to be your client for this project and the associated Project II. In an industry setting, you’ll be expected to communicate with your client during the development of your product; to help you practice this, along with the specific database design skills you’ll demonstrate, you have a few checkpoints to complete prior to the final due date. These are intended to help you make steady progress on the project, so that by the final deadline all your work will be polished and complete. All checkpoints can be submitted to the same Sakai Assignment.\nThis breakdown identifies all the important dates:\n\nFriday, September 13: You will upload an in-progress Dependency Diagram as a photo through Sakai.\nMonday, September 16: You will upload an in-progress Excel file to Sakai to confirm navigational accessibility.\nMonday, September 23: You will upload an in-progress README as a PDF to Sakai to confirm formatting.\nFriday, September 27: A completed Excel file and README are submitted through Sakai.\n\nThe following categories will be my criteria to evaluate this assignment on a 100-pt scale:\n\n35 pts: All relations are well-formed; data has been normalized following your dependency diagram.\n35 pts: The schema you developed and its contents are well documented using a physical ERD.\n30 pts: Data Dictionary and Reflection support the decisions documented in the Excel file and ERD."
+  },
+  {
+    "objectID": "design.html",
+    "href": "design.html",
+    "title": "Design a Database",
+    "section": "",
+    "text": "In this activity, which you will work on during class time today and on Friday, you’ll design the database for one of the major companies which use PostgreSQL today!\nYour group will be assigned one of the following companies: Netflix, IMDb, Spotify, Twitch, Instagram, Reddit\nWith your group, develop 3 user personas for the company you have chosen; think about the following questions when developing your personas / researching the company:\n\nWhat does the end-user need from the database that this company uses to provide its service? How will they interact with the company’s database?\nWhat privileges will the end-user need to access the data? Does this vary between end-users?\nWhat are the most common operations that the users will perform?\nWill your user have any knowledge of SQL?\nWill users be inserting / updating data, or just querying it? Does this vary between users?\n\nOnce you have your user personas developed, start to write some ideas about the design of the database. Include the following:\n\nWhat is the classification of the database you are developing? (E.g., is it Single or multi-user? General-purpose or discipline-specific? So on and so forth…)\nWhat are the most common operations / transactions that you’d want to build into the system?\nWhat are the most common “roles” for users of the system?\nWhat types of data will be tracked by the system? Will users be able to affect it?\nAre there actions taken by the system that are part of a larger transaction? (E.g., if something can be purchased, what sequence of SQL statements would be executed?)\n\nIf you finish developing personas and discussing the database, begin to sketch a potential ERD for the database you’ve just discussed."
   },
   {
     "objectID": "policies.html",

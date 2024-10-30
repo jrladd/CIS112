@@ -7,7 +7,7 @@ title: "Schedule & Readings"
 There are no required texts for this course. Consider this resource (from the B.C. Open Textbook Collection) for supplemental reading: [Database Design – 2nd Edition](https://opentextbc.ca/dbdesign01/open/download?type=pdf), by Adrienne Watt and Nelson Eng.
 
 **Slideshows**: [Databasics](slides/databasics.qmd), [SQL](slides/sql.qmd)  
-**Resources**: [Login to Postgres](login.qmd)
+**Resources**: [Login to Postgres](login.qmd), [Design a Database](design.qmd)
 
 ## Class Schedule
 

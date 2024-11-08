@@ -434,6 +434,20 @@
     "text": "Assignment Breakdown\n\n\n\nAssignment\nPercentage\n\n\n\n\nQuizzes\n15%\n\n\nExams 1 & 2\n15%\n\n\nProject 1\n15%\n\n\nProject 2\n15%\n\n\nFinal Project\n20%\n\n\nFinal Exam\n20%"
   },
   {
+    "objectID": "assignments/project3.html",
+    "href": "assignments/project3.html",
+    "title": "Final Project: Build a Database",
+    "section": "",
+    "text": "Complete by: Monday 4 Dec., at class time.\nSee the bottom of the file for additional checkpoints, all due at class time.\nThis prompt was written by Dr. Rapp and lightly adapted by me for our class.\nIn this project, you will plan, design, and develop a database on a topic of your choice as if you were going to release it online for public use. Sample topics could include…\nYou may not build a database from a dataset of sports statistics or about professional athletes. You may not collect data about people without working with W&J’s Institutional Review Board. If you would like to collect data for your final project, please meet with me ASAP!\nYour database must feature no less than eight tables, store a minimum of 25 attributes and 80 rows across all tables1, and store ten reasonably distinct queries representing documented use-cases. Those queries must make use of the following operations:\nYou will also add a minimum of two trigger functions to automatically perform certain transactions within your system. You must use a minimum of three SQL keywords that were not covered in class.\nYou must provide all relevant documentation as a single PDF which you will name “README.pdf”, to make obvious to the users of your system that it is intended for them to read! The README should be a cohesive document with good flow and must feature your database’s purpose and classification, three user personas2, a use-case diagram illustrating the actions that intended actors can perform, the complete data dictionary and entity relationship diagram documenting your database design, and instructions written for the person developing your interface detailing the function calls for the particular use-cases you’ve designed your system to support3.\nYou are expected to work on this project out of class until the due date of 10:20am on Monday, December 4. You are welcome to work with your peers, with the PAL tutors, and with me on this project, but if you choose the same database as a friend you may not share queries, trigger functions, or new keywords unless given written permission from me. To ensure timely completion and prevent end-of-semester stress due to procrastination, I will require pieces of the project submission before the final due date. Here is the timeline for the final project:\nThe following criteria will be followed to evaluate this assignment on a 100-pt scale:"
+  },
+  {
+    "objectID": "assignments/project3.html#footnotes",
+    "href": "assignments/project3.html#footnotes",
+    "title": "Final Project: Build a Database",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nIf it is completely impossible to hit the requirements as indicated given the purpose of a database of your creation, you may ask for an exception to this rule. Any project seeking this exception must have been granted accommodation (through an email confirmation) prior to the Thanksgiving break.↩︎\nSee footnote 1!↩︎\nAs an example, this might include connecting a particular use-case to a particular function. As an example, one might write the following as an instruction: “Users are able to search for the phone number of a particular contact (e.g., John Marine). The function query_contact_phone takes two text arguments, representing the first and last name for the contact of interest. An example function call in SQL would look like: SELECT ∗ FROM query_contact_phone(’John’,’Marine’);”↩︎"
+  },
+  {
     "objectID": "assignments/project1.html",
     "href": "assignments/project1.html",
     "title": "Project 1: Database Design",

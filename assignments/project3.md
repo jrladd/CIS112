@@ -3,7 +3,7 @@ title:  "Final Project: Build a Database"
 date:   2023-11-08 10:00:00 -0400
 show_date: false
 ---
-**Complete by: Monday 4 Dec., at class time.**  
+**Complete by: Monday 9 Dec., at class time.**  
 *See the bottom of the file for additional checkpoints, all due at class time.*
 
 *This prompt was written by Dr. Rapp and lightly adapted by me for our class.*
@@ -28,9 +28,9 @@ You will also add a minimum of **two** trigger functions to automatically perfor
 
 You must provide all relevant documentation as a single PDF which you will name “README.pdf”, to make obvious to the users of your system that it is intended for them to read! The README should be a cohesive document with good flow and must feature your database’s purpose and classification, **three** user personas[^2], a use-case diagram illustrating the actions that intended actors can perform, the complete data dictionary and entity relationship diagram documenting your database design, and instructions written for the person developing your interface detailing the function calls for the particular use-cases you’ve designed your system to support[^3].
 
-You are expected to work on this project out of class until the due date of 10:20am on Monday, December 4. You are welcome to work with your peers, with the PAL tutors, and with me on this project, but if you choose the same database as a friend you may not share queries, trigger functions, or new keywords unless given written permission from me. To ensure timely completion and prevent end-of-semester stress due to procrastination, I will require pieces of the project submission before the final due date. Here is the timeline for the final project:
+You are expected to work on this project out of class until the due date of 1pm on Monday, December 9. You are welcome to work with your peers, with the PAL tutors, and with me on this project, but if you choose the same database as a friend you may not share queries, trigger functions, or new keywords unless given written permission from me. To ensure timely completion and prevent end-of-semester stress due to procrastination, I will require pieces of the project submission before the final due date. Here is the timeline for the final project:
 
-- Monday, November 10: Email me your topic and three potential meeting times on November 15, 16, or 17.
+- Monday, November 11: Email me your topic by 5pm 
 - Friday, November 15: Class will not be held to make time for 1:1 meetings, to which you will bring...
 
     – A draft of all of your user personas  

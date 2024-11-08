@@ -2,7 +2,6 @@
 title:  "Final Project: Build a Database"
 date:   2023-11-08 10:00:00 -0400
 show_date: false
-draft: true
 ---
 **Complete by: Monday 4 Dec., at class time.**  
 *See the bottom of the file for additional checkpoints, all due at class time.*
@@ -11,14 +10,13 @@ draft: true
 
 In this project, you will plan, design, and develop a database on a topic of your choice as if you were going to release it online for public use. Sample topics could include...
 
-- Normalizing one of the datasets provided through Sakai and performing simple analyses
-- Developing the backend for an online voting system (for a small group or organization)
 - Collecting your favorite recipes, the ingredients for dishes, the best farmers markets you’ve found, etc.
+- Developing the backend for an online voting system (for a small group or organization)
 - Tracking the movies, games, music, and/or books in your personal collection / wishlist
 
 You may **not** build a database from a dataset of sports statistics or about professional athletes. You may **not** collect data about people without working with W&J’s Institutional Review Board. If you would like to collect data for your final project, please meet with me ASAP!
 
-Your database must feature no less than eight tables[^1], store a minimum of 25 attributes and 80 rows across all tables[^2], and store ten reasonably distinct queries representing documented use-cases. Those queries must make use of the following operations:
+Your database must feature no less than eight tables, store a minimum of 25 attributes and 80 rows across all tables[^1], and store ten reasonably distinct queries representing documented use-cases. Those queries must make use of the following operations:
 
 - At least five queries with JOINs; two of these must use an OUTER JOIN
 - At least three queries should use an aggregate function; one must use a GROUP BY
@@ -28,21 +26,20 @@ Your database must feature no less than eight tables[^1], store a minimum of 25 
 
 You will also add a minimum of **two** trigger functions to automatically perform certain transactions within your system. You must use a minimum of **three** SQL keywords that were not covered in class.
 
-You must provide all relevant documentation as a single PDF which you will name “README.pdf”, to make obvious to the users of your system that it is intended for them to read! The README should be a cohesive document with good flow and must feature your database’s purpose and classification, **three** user personas[^3], a use-case diagram illustrating the actions that intended actors can perform, the complete data dictionary and entity relationship diagram documenting your database design, and instructions written for the person developing your interface detailing the function calls for the particular use-cases you’ve designed your system to support[^4].
+You must provide all relevant documentation as a single PDF which you will name “README.pdf”, to make obvious to the users of your system that it is intended for them to read! The README should be a cohesive document with good flow and must feature your database’s purpose and classification, **three** user personas[^2], a use-case diagram illustrating the actions that intended actors can perform, the complete data dictionary and entity relationship diagram documenting your database design, and instructions written for the person developing your interface detailing the function calls for the particular use-cases you’ve designed your system to support[^3].
 
 You are expected to work on this project out of class until the due date of 10:20am on Monday, December 4. You are welcome to work with your peers, with the PAL tutors, and with me on this project, but if you choose the same database as a friend you may not share queries, trigger functions, or new keywords unless given written permission from me. To ensure timely completion and prevent end-of-semester stress due to procrastination, I will require pieces of the project submission before the final due date. Here is the timeline for the final project:
 
-- Wednesday, November 8 - Friday, November 10: Develop a topic!
-- Friday, November 10: Email me your topic and three potential meeting times on November 15, 16, or 17.
-- Friday, November 17: Class will not be held to make time for 1:1 meetings, to which you will bring...
+- Monday, November 10: Email me your topic and three potential meeting times on November 15, 16, or 17.
+- Friday, November 15: Class will not be held to make time for 1:1 meetings, to which you will bring...
 
     – A draft of all of your user personas  
     – A draft of your first pass at a use case diagram  
     – A draft of your ERD if and only if the prior two are fully complete  
 
-- (Check-in) Monday, November 20: You should submit your in-progress UCD and ERD.
-- (Check-in) Wednesday, November 29: You should submit your in-progress SQL file and README.
-- Monday, December 4: Your complete project is due through Sakai by 10:20am.
+- (Check-in) Monday, November 18: You should submit your in-progress UCD and ERD.
+- (Check-in) Monday, December 2: You should submit your in-progress SQL file and README.
+- Monday, December 9: Your complete project is due through Sakai by 1pm.
 
 The following criteria will be followed to evaluate this assignment on a 100-pt scale:
 
@@ -65,8 +62,6 @@ The following criteria will be followed to evaluate this assignment on a 100-pt 
 
 - 10 pts: Database meets the intended purpose and is consistent with both the UCD and the ERD
 
-[^1]: If you are using one of the provided datasets, this may not be applicable. In that case, you must include all provided attributes.
-
-[^2]:If it is completely impossible to hit the requirements as indicated given the purpose of a database of your creation, you may ask for an exception to this rule. Any project seeking this exception must have been granted accommodation (through an email confirmation) prior to the Thanksgiving break.
-[^3]: See footnote 2!
-[^4]: As an example, this might include connecting a particular use-case to a particular function. For the Project I & II system, one might write the following as an instruction: "Users are able to search for the phone number of a particular contact (e.g., John Marine). The function query_contact_phone takes two text arguments, representing the first and last name for the contact of interest. An example function call in SQL would look like: `SELECT ∗ FROM query_contact_phone(’John’,’Marine’);`"
+[^1]:If it is completely impossible to hit the requirements as indicated given the purpose of a database of your creation, you may ask for an exception to this rule. Any project seeking this exception must have been granted accommodation (through an email confirmation) prior to the Thanksgiving break.
+[^2]: See footnote 1!
+[^3]: As an example, this might include connecting a particular use-case to a particular function. As an example, one might write the following as an instruction: "Users are able to search for the phone number of a particular contact (e.g., John Marine). The function query_contact_phone takes two text arguments, representing the first and last name for the contact of interest. An example function call in SQL would look like: `SELECT ∗ FROM query_contact_phone(’John’,’Marine’);`"

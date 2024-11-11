@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jrladd.github.io/CIS112/schedule.html</loc>
-    <lastmod>2024-10-30T16:25:39.166Z</lastmod>
+    <lastmod>2024-11-11T14:39:29.468Z</lastmod>
   </url>
   <url>
     <loc>https://jrladd.github.io/CIS112/slides/sql.html</loc>
@@ -17,20 +17,24 @@
     <lastmod>2024-09-23T18:58:10.860Z</lastmod>
   </url>
   <url>
-    <loc>https://jrladd.github.io/CIS112/assignments/project2.html</loc>
-    <lastmod>2024-10-03T20:22:55.030Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jrladd.github.io/CIS112/assignments.html</loc>
-    <lastmod>2024-08-23T16:55:44.812Z</lastmod>
+    <loc>https://jrladd.github.io/CIS112/assignments/project1.html</loc>
+    <lastmod>2024-09-10T20:02:00.348Z</lastmod>
   </url>
   <url>
     <loc>https://jrladd.github.io/CIS112/assignments/project3.html</loc>
     <lastmod>2024-11-08T20:17:00.923Z</lastmod>
   </url>
   <url>
-    <loc>https://jrladd.github.io/CIS112/assignments/project1.html</loc>
-    <lastmod>2024-09-10T20:02:00.348Z</lastmod>
+    <loc>https://jrladd.github.io/CIS112/assignments.html</loc>
+    <lastmod>2024-08-23T16:55:44.812Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jrladd.github.io/CIS112/assignments/project2.html</loc>
+    <lastmod>2024-10-03T20:22:55.030Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jrladd.github.io/CIS112/trigger.html</loc>
+    <lastmod>2024-11-11T14:38:46.375Z</lastmod>
   </url>
   <url>
     <loc>https://jrladd.github.io/CIS112/design.html</loc>

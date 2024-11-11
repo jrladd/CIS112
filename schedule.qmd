@@ -26,8 +26,8 @@ Dates|Monday|Wednesday|Friday
 23-25 Oct.|NO CLASS (Fall Break)|Exam Review Day!|**EXAM 2**\**
 28 Oct.-1 Nov.|[ACID](https://www.databricks.com/glossary/acid-transactions), [Transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html)|[User Interfaces](https://e115.engr.ncsu.edu/operating-systems/user-interface/), [pgAdmin](https://www.adservio.fr/post/what-is-pgadmin), [User Personas](https://mailchimp.com/resources/how-to-create-a-user-persona-ux/)|**Project 2 Due**, [Use Case Diagrams](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/), Designing a Database
 4-8 Nov.|**[SQL Functions](https://www.postgresql.org/docs/14/xfunc.html), [Creating](https://www.postgresql.org/docs/14/sql-createfunction.html) and using [PL/pgSQL](https://www.postgresql.org/docs/14/plpgsql-structure.html)**\**|**[Declaring](https://www.postgresql.org/docs/14/plpgsql-declarations.html) and [Initializing](https://www.commandprompt.com/education/how-to-declare-a-variable-in-postgresql/) Variables**\**|Learn new SQL commands on your own!
-11-15 Nov.|**[Trigger Functions](https://www.postgresql.org/docs/14/plpgsql-trigger.html)**\**|Functions Practice|One-on-one meetings
-18-22 Nov.|User Needs Activities|**[Database Testing](https://katalon.com/resources-center/blog/database-testing)**\**|Practice and Work on Final Project
+11-15 Nov.|**[Trigger Functions](https://www.postgresql.org/docs/14/plpgsql-trigger.html)**\**|[User Needs Activities](trigger.qmd)|One-on-one meetings
+18-22 Nov.|More Functions & Queries|**[Database Testing](https://katalon.com/resources-center/blog/database-testing)**\**|Practice and Work on Final Project
 25 Nov.|Work on Final Projects|NO CLASS on Wednesday|NO CLASS on Friday
 2-6 Dec.|Peer review and Test Final Projects|Final Project Work|One-on-one meetings
 9 Dec.|**Final Project Due! Final Exam Review Day!**\**
